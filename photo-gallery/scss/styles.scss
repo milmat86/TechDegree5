@@ -1,0 +1,52 @@
+// ======================================
+//  Partial Imports
+// ======================================
+* {
+box-sizing: border-box;
+}
+
+@import 'base/index';
+
+body {
+  font-family: 'Lato', Verdana, "sans-serif" ;
+}
+
+
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+    input {
+      padding: 20px;
+      width: 60%;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+    }
+    input:focus {
+      outline: none;
+      box-shadow: 1px 1px 2px #ccc;
+      }
+}
+
+.gallery {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+max-width: 875px;
+margin: 0 auto;
+justify-items: center;
+align-items: center;
+gap: 25px;
+
+
+   a{
+     display: grid;
+     justify-items: center;
+     align-items: center;
+   }
+
+}
